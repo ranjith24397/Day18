@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+   
+    
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+   
+    body{
+      background-image: linear-gradient(to right, #ffefba, #ffffff);
+    }
+    .row{
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      flex-wrap: wrap;
+    } 
+    h5{
+      text-align:center;
+      font-size: 18px;
+      padding: 10px;
+      font-family: 'Cinzel', serif;
+      border-radius: 8px;
+
+    }
+    .card-header{
+      background-color:black;
+      margin-top: 10px;
+      width: 270px;
+      color: white;
+      
+
+    }
+    
+    img{
+      height: 150px;
+      width: 270px;
+      border: 1px solid gray;
+      
+    }
+    .card-body{
+      text-align: center;
+      line-height: 15px;
+      font-size: 14px;
+      font-family: 'Cinzel', serif;
+      font-family: 'Crimson Text', serif;
+      font-family: 'Pangolin', cursive;
+      padding: 8px;
+      border: 2px solid gray;
+      width:270px;
+      background-color:black;
+      color: white;
+      border-radius: 8px;
+    }
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center;font-family: 'Cinzel', serif;;">Rest Countries & Weather Using Fetch</h1>
+    <div class="row" id="card">
+      <div id="flags" class="col-lg-4 col-sm-12">
+      <h5 class="card-header">${country.name.common}</h5>
+      <img src="${country.flags.png}" alt="...">
+      <div class="card-body">
+        <p class="capital">Capital:${country.capital}</p>
+        <p class="region">Region:${country.region}</p>
+        <p class="countrycode">Country Code</p>
+        <button id="btn" class="btn btn-primary"> Click for weather</button>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  </script>
+</body>
+</html>
+
+
