@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implementing CRUD using HTML, CSS and JS</title>
+    <!-- Include Bootstrap CSS link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      *{
+        color:black;
+        font-weight: 700;
+      }
+      input{
+        background-color: bisque;
+      }
+      #male{
+        margin-right: 8px;
+        
+      }
+      .btn1{
+        margin-left: 15px;
+      }
+      .btn2{
+        margin-left: 15px;
+      }
+      body{
+        background-color:cornsilk;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1>Form Details</h1>
+      <form id="crudForm">
+        <div class="form-group">
+          <label for="FirstName">FirstName:</label>
+          <input type="text" class="form-control" id="FirstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">LastName:</label>
+          <input type="text" class="form-control" id="lastName" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+         <textarea class="form-control" id="address"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="state">State:</label>
+          <input type="text" class="form-control" id="state" required>
+        </div>
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <input type="text" class="form-control" id="country" required>
+        </div>
+        <div class="form-group">
+          <label for="pincode">Pincode:</label>
+          <input type="text" class="form-control" id="pincode" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" id="submit">Save</button>  
+        </div>
+      </form>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Address</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Pincode</th>
+          </tr>
+        </thead>
+        <tbody id="dataRows">
+
+        </tbody>
+
+      </table>
+    </div>
+    <!-- Include Bootstrap and your custom JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
